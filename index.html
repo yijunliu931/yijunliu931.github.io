@@ -557,46 +557,68 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
             </div>
           </div>
           <div class="proj-vis">
-            <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
+            <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
               <defs>
                 <marker id="a1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="rgba(0,229,255,0.5)"/></marker>
                 <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(0,229,255,0.12)"/><stop offset="100%" stop-color="rgba(139,92,246,0.08)"/></linearGradient>
               </defs>
               <!-- Layer labels -->
-              <text x="12" y="26" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">DATA SOURCES</text>
-              <text x="12" y="116" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">INGESTION</text>
-              <text x="12" y="196" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">API LAYER</text>
-              <text x="12" y="266" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">STORAGE</text>
-              <line x1="12" y1="30" x2="408" y2="30" stroke="rgba(255,255,255,0.03)"/>
-              <line x1="12" y1="120" x2="408" y2="120" stroke="rgba(255,255,255,0.03)"/>
-              <line x1="12" y1="200" x2="408" y2="200" stroke="rgba(255,255,255,0.03)"/>
-              <!-- Source nodes -->
-              <rect x="40" y="42" width="85" height="32" rx="6" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
-              <text x="82" y="63" text-anchor="middle" fill="#00e5ff" font-size="10" font-family="JetBrains Mono">Source 1</text>
-              <rect x="168" y="42" width="85" height="32" rx="6" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
-              <text x="210" y="63" text-anchor="middle" fill="#00e5ff" font-size="10" font-family="JetBrains Mono">Source 2</text>
-              <rect x="296" y="42" width="85" height="32" rx="6" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
-              <text x="338" y="63" text-anchor="middle" fill="#00e5ff" font-size="10" font-family="JetBrains Mono">Source N</text>
-              <!-- Arrows to engine -->
-              <line x1="82" y1="74" x2="210" y2="130" stroke="rgba(0,229,255,0.2)" marker-end="url(#a1)"/>
-              <line x1="210" y1="74" x2="210" y2="130" stroke="rgba(0,229,255,0.2)" marker-end="url(#a1)"/>
-              <line x1="338" y1="74" x2="210" y2="130" stroke="rgba(0,229,255,0.2)" marker-end="url(#a1)"/>
-              <!-- Engine -->
-              <rect x="120" y="130" width="180" height="38" rx="8" fill="url(#g1)" stroke="rgba(139,92,246,0.4)"/>
-              <text x="210" y="154" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="600" font-family="JetBrains Mono">Terraflow Engine</text>
-              <!-- Arrow to API -->
-              <line x1="210" y1="168" x2="210" y2="206" stroke="rgba(0,229,255,0.2)" marker-end="url(#a1)"/>
-              <!-- API -->
-              <rect x="130" y="206" width="160" height="32" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
-              <text x="210" y="227" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="JetBrains Mono">gRPC / REST APIs</text>
-              <!-- Arrows to storage -->
-              <line x1="170" y1="238" x2="110" y2="270" stroke="rgba(0,229,255,0.2)" marker-end="url(#a1)"/>
-              <line x1="250" y1="238" x2="310" y2="270" stroke="rgba(0,229,255,0.2)" marker-end="url(#a1)"/>
-              <!-- Storage -->
-              <rect x="55" y="270" width="110" height="32" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
-              <text x="110" y="291" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-family="JetBrains Mono">TiDB / Redis</text>
-              <rect x="255" y="270" width="110" height="32" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
-              <text x="310" y="291" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-family="JetBrains Mono">Analytics</text>
+              <text x="12" y="18" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 1 · CHAINS</text>
+              <text x="12" y="88" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 2 · INGESTION</text>
+              <text x="12" y="168" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 3 · STREAMING</text>
+              <text x="12" y="258" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 3 · STORAGE</text>
+              <line x1="12" y1="22" x2="408" y2="22" stroke="rgba(255,255,255,0.03)"/>
+              <line x1="12" y1="92" x2="408" y2="92" stroke="rgba(255,255,255,0.03)"/>
+              <line x1="12" y1="172" x2="408" y2="172" stroke="rgba(255,255,255,0.03)"/>
+              <line x1="12" y1="262" x2="408" y2="262" stroke="rgba(255,255,255,0.03)"/>
+              <!-- Band 1: Chain sources -->
+              <rect x="40" y="30" width="80" height="28" rx="5" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
+              <text x="80" y="49" text-anchor="middle" fill="#00e5ff" font-size="9" font-family="JetBrains Mono">ETH</text>
+              <rect x="128" y="30" width="80" height="28" rx="5" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
+              <text x="168" y="49" text-anchor="middle" fill="#00e5ff" font-size="9" font-family="JetBrains Mono">BSC</text>
+              <rect x="216" y="30" width="80" height="28" rx="5" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
+              <text x="256" y="49" text-anchor="middle" fill="#00e5ff" font-size="9" font-family="JetBrains Mono">Polygon</text>
+              <rect x="304" y="30" width="80" height="28" rx="5" fill="rgba(0,229,255,0.06)" stroke="rgba(0,229,255,0.2)"/>
+              <text x="344" y="49" text-anchor="middle" fill="rgba(0,229,255,0.6)" font-size="9" font-family="JetBrains Mono">20+ more</text>
+              <!-- Arrows to ingestion -->
+              <line x1="80" y1="58" x2="155" y2="98" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <line x1="168" y1="58" x2="200" y2="98" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <line x1="256" y1="58" x2="240" y2="98" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <line x1="344" y1="58" x2="285" y2="98" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <!-- Band 2: Ingestion -->
+              <rect x="60" y="98" width="160" height="34" rx="7" fill="url(#g1)" stroke="rgba(139,92,246,0.4)"/>
+              <text x="140" y="120" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="600" font-family="JetBrains Mono">ECS Fargate Workers</text>
+              <rect x="230" y="98" width="130" height="34" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="295" y="112" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="8" font-family="JetBrains Mono">Task Manager</text>
+              <text x="295" y="124" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="7" font-family="JetBrains Mono">FastAPI · N workers</text>
+              <!-- Arrows to streaming -->
+              <line x1="140" y1="132" x2="105" y2="178" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <line x1="295" y1="132" x2="295" y2="178" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <!-- Band 3: Streaming -->
+              <rect x="40" y="178" width="100" height="34" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="90" y="195" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="JetBrains Mono">S3</text>
+              <text x="90" y="206" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">Snappy-Parquet</text>
+              <rect x="152" y="178" width="100" height="34" rx="6" fill="rgba(0,229,255,0.06)" stroke="rgba(0,229,255,0.2)"/>
+              <text x="202" y="195" text-anchor="middle" fill="rgba(0,229,255,0.7)" font-size="9" font-family="JetBrains Mono">Kafka</text>
+              <text x="202" y="206" text-anchor="middle" fill="rgba(0,229,255,0.35)" font-size="7" font-family="JetBrains Mono">per chain topic</text>
+              <rect x="264" y="178" width="100" height="34" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="314" y="195" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="JetBrains Mono">Redis</text>
+              <text x="314" y="206" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">hot cache + API</text>
+              <!-- Arrows between streaming -->
+              <line x1="140" y1="195" x2="152" y2="195" stroke="rgba(255,255,255,0.08)"/>
+              <line x1="252" y1="195" x2="264" y2="195" stroke="rgba(255,255,255,0.08)"/>
+              <!-- Processing -->
+              <rect x="60" y="222" width="140" height="28" rx="5" fill="rgba(139,92,246,0.06)" stroke="rgba(139,92,246,0.2)"/>
+              <text x="130" y="241" text-anchor="middle" fill="rgba(139,92,246,0.5)" font-size="9" font-family="JetBrains Mono">Flink Streaming</text>
+              <rect x="210" y="222" width="150" height="28" rx="5" fill="rgba(139,92,246,0.06)" stroke="rgba(139,92,246,0.2)"/>
+              <text x="285" y="241" text-anchor="middle" fill="rgba(139,92,246,0.5)" font-size="9" font-family="JetBrains Mono">Databricks Batch</text>
+              <!-- Arrows to TiDB -->
+              <line x1="130" y1="250" x2="185" y2="272" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <line x1="285" y1="250" x2="240" y2="272" stroke="rgba(0,229,255,0.15)" marker-end="url(#a1)"/>
+              <!-- Band 3: Storage -->
+              <rect x="110" y="272" width="200" height="34" rx="7" fill="url(#g1)" stroke="rgba(139,92,246,0.35)"/>
+              <text x="210" y="290" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="600" font-family="JetBrains Mono">TiDB</text>
+              <text x="210" y="302" text-anchor="middle" fill="rgba(139,92,246,0.4)" font-size="7" font-family="JetBrains Mono">HTAP — TiKV (OLTP) + TiFlash (OLAP)</text>
             </svg>
           </div>
         </div>
@@ -606,45 +628,60 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
       <div class="proj reveal">
         <div class="proj-inner">
           <div class="proj-vis" style="order:-1;">
-            <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
+            <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
               <defs>
                 <marker id="a2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="rgba(139,92,246,0.5)"/></marker>
                 <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(139,92,246,0.12)"/><stop offset="100%" stop-color="rgba(0,229,255,0.08)"/></linearGradient>
               </defs>
               <!-- Layer labels -->
-              <text x="12" y="26" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">FRONTEND</text>
-              <text x="12" y="116" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">PLATFORM</text>
-              <text x="12" y="206" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">INFRASTRUCTURE</text>
-              <text x="12" y="276" fill="rgba(255,255,255,0.15)" font-size="9" font-family="JetBrains Mono">ASSETS</text>
-              <line x1="12" y1="30" x2="408" y2="30" stroke="rgba(255,255,255,0.03)"/>
-              <line x1="12" y1="120" x2="408" y2="120" stroke="rgba(255,255,255,0.03)"/>
-              <line x1="12" y1="210" x2="408" y2="210" stroke="rgba(255,255,255,0.03)"/>
-              <!-- Frontend -->
-              <rect x="120" y="42" width="180" height="38" rx="8" fill="url(#g2)" stroke="rgba(139,92,246,0.4)"/>
-              <text x="210" y="66" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="600" font-family="JetBrains Mono">React Dashboard</text>
+              <text x="12" y="18" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 5 · CONSUMERS</text>
+              <text x="12" y="98" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 4 · STAKING API</text>
+              <text x="12" y="188" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 6 · PLATFORM</text>
+              <text x="12" y="268" fill="rgba(255,255,255,0.15)" font-size="8" font-family="JetBrains Mono">BAND 1 · VALIDATORS</text>
+              <line x1="12" y1="22" x2="408" y2="22" stroke="rgba(255,255,255,0.03)"/>
+              <line x1="12" y1="102" x2="408" y2="102" stroke="rgba(255,255,255,0.03)"/>
+              <line x1="12" y1="192" x2="408" y2="192" stroke="rgba(255,255,255,0.03)"/>
+              <line x1="12" y1="272" x2="408" y2="272" stroke="rgba(255,255,255,0.03)"/>
+              <!-- Band 5: Consumers -->
+              <rect x="40" y="30" width="160" height="38" rx="7" fill="url(#g2)" stroke="rgba(139,92,246,0.4)"/>
+              <text x="120" y="50" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="600" font-family="JetBrains Mono">stake.certik.com</text>
+              <text x="120" y="62" text-anchor="middle" fill="rgba(139,92,246,0.35)" font-size="7" font-family="JetBrains Mono">Next.js · Cloudflare CDN</text>
+              <rect x="220" y="30" width="160" height="38" rx="7" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="300" y="50" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="JetBrains Mono">Grafana</text>
+              <text x="300" y="62" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">Dashboards · Alerts</text>
               <!-- Arrows down -->
-              <line x1="140" y1="80" x2="90" y2="130" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <line x1="210" y1="80" x2="210" y2="130" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <line x1="280" y1="80" x2="330" y2="130" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <!-- Platform layer -->
-              <rect x="35" y="130" width="110" height="38" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
-              <text x="90" y="154" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="JetBrains Mono">K8s Cluster</text>
-              <rect x="155" y="130" width="110" height="38" rx="6" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
-              <text x="210" y="154" text-anchor="middle" fill="#00e5ff" font-size="10" font-family="JetBrains Mono">Go API</text>
-              <rect x="275" y="130" width="110" height="38" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
-              <text x="330" y="154" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="JetBrains Mono">Monitoring</text>
-              <!-- Arrows to infra -->
-              <line x1="90" y1="168" x2="170" y2="218" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <line x1="210" y1="168" x2="210" y2="218" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <line x1="330" y1="168" x2="250" y2="218" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <!-- Infra -->
-              <rect x="120" y="218" width="180" height="38" rx="6" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
-              <text x="210" y="242" text-anchor="middle" fill="#00e5ff" font-size="10" font-weight="600" font-family="JetBrains Mono">15+ Validator Nodes</text>
-              <!-- Arrow to assets -->
-              <line x1="210" y1="256" x2="210" y2="280" stroke="rgba(139,92,246,0.2)" marker-end="url(#a2)"/>
-              <!-- Assets -->
-              <rect x="140" y="280" width="140" height="28" rx="6" fill="rgba(139,92,246,0.06)" stroke="rgba(139,92,246,0.2)"/>
-              <text x="210" y="299" text-anchor="middle" fill="rgba(139,92,246,0.6)" font-size="10" font-weight="600" font-family="JetBrains Mono">$700M+ Secured</text>
+              <line x1="120" y1="68" x2="160" y2="108" stroke="rgba(139,92,246,0.15)" marker-end="url(#a2)"/>
+              <line x1="300" y1="68" x2="300" y2="108" stroke="rgba(139,92,246,0.15)" marker-end="url(#a2)"/>
+              <!-- Band 4: Staking API -->
+              <rect x="60" y="108" width="180" height="38" rx="7" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.3)"/>
+              <text x="150" y="128" text-anchor="middle" fill="#00e5ff" font-size="10" font-weight="600" font-family="JetBrains Mono">certik-staking-api</text>
+              <text x="150" y="140" text-anchor="middle" fill="rgba(0,229,255,0.4)" font-size="7" font-family="JetBrains Mono">Go · Gin · GORM · Redis</text>
+              <rect x="250" y="108" width="120" height="38" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="310" y="125" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="8" font-family="JetBrains Mono">Workers / Cron</text>
+              <text x="310" y="138" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">snapshots · pricing</text>
+              <!-- Horizontal link -->
+              <line x1="240" y1="127" x2="250" y2="127" stroke="rgba(255,255,255,0.08)"/>
+              <!-- Arrows to platform -->
+              <line x1="150" y1="146" x2="120" y2="198" stroke="rgba(0,229,255,0.15)" marker-end="url(#a2)"/>
+              <line x1="310" y1="146" x2="310" y2="198" stroke="rgba(0,229,255,0.15)" marker-end="url(#a2)"/>
+              <!-- Band 6: Platform -->
+              <rect x="40" y="198" width="100" height="34" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="90" y="213" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="JetBrains Mono">K8s</text>
+              <text x="90" y="225" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">Docker · Helm</text>
+              <rect x="152" y="198" width="100" height="34" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="202" y="213" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="JetBrains Mono">Prometheus</text>
+              <text x="202" y="225" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">metrics · exporters</text>
+              <rect x="264" y="198" width="100" height="34" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)"/>
+              <text x="314" y="213" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9" font-family="JetBrains Mono">Terraform</text>
+              <text x="314" y="225" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="7" font-family="JetBrains Mono">infra · CI/CD</text>
+              <!-- Arrows to validators -->
+              <line x1="90" y1="232" x2="150" y2="278" stroke="rgba(0,229,255,0.15)" marker-end="url(#a2)"/>
+              <line x1="202" y1="232" x2="210" y2="278" stroke="rgba(0,229,255,0.15)" marker-end="url(#a2)"/>
+              <line x1="314" y1="232" x2="270" y2="278" stroke="rgba(0,229,255,0.15)" marker-end="url(#a2)"/>
+              <!-- Band 1: Validators -->
+              <rect x="90" y="278" width="240" height="38" rx="7" fill="url(#g2)" stroke="rgba(139,92,246,0.35)"/>
+              <text x="210" y="298" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="600" font-family="JetBrains Mono">15+ Validator Nodes</text>
+              <text x="210" y="310" text-anchor="middle" fill="rgba(139,92,246,0.4)" font-size="7" font-family="JetBrains Mono">ETH · BSC · Cosmos · Aptos · $700M+ secured</text>
             </svg>
           </div>
           <div class="proj-info">
