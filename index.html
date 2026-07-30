@@ -451,7 +451,7 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
 <div id="loader"><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
 <canvas id="particles"></canvas>
 
-<div class="top-banner" id="topBanner"><span class="dot"></span> Open to opportunities in Sydney & Australia</div>
+<div class="top-banner" id="topBanner"><span class="dot"></span> Based in Canberra & Sydney</div>
 
 <nav>
   <div class="nav-inner">
@@ -475,7 +475,7 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
   <div class="hero-orb hero-orb-2"></div>
   <div class="hero-orb hero-orb-3"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span class="dot"></span> Open to opportunities in Sydney & Australia</div>
+    <div class="hero-badge"><span class="dot"></span> Based in Canberra & Sydney</div>
     <h1 class="hero-name">
       <span class="first">Yijun</span><span class="nick">(Mike)</span><span class="last">LIU</span>
     </h1>
@@ -511,19 +511,20 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
         <div class="section-label">About</div>
         <h2 class="section-title">Systems that <span class="gradient-text">scale</span></h2>
         <div class="about-text">
-          <p>I'm a <strong>Software Engineer</strong> based in <strong>Canberra, Australia</strong>.
-          I design distributed systems that handle real-world complexity at scale — from multi-chain
-          blockchain data platforms to enterprise cloud migrations.</p>
-          <p>I also integrate <strong>AI-augmented workflows</strong> into daily engineering, building
-          internal tools with Claude Code, multi-agent orchestration, and MCP integrations that
-          dramatically accelerate development velocity.</p>
+          <p>I'm a <strong>Software Engineer</strong> based in <strong>Canberra & Sydney, Australia</strong>.
+          I design and build production platforms from scratch — a real-time data ingestion system processing
+          <strong>15–20M transactions/day</strong>, and a fullstack validator infrastructure serving
+          <strong>$700M+ in staked assets</strong>.</p>
+          <p>I also build <strong>AI agent pipelines</strong> — including a neuro-symbolic security auditor
+          that pairs LLM reasoning with mathematical verification. Practitioner of Harness Engineering for
+          AI-assisted development workflows.</p>
         </div>
       </div>
       <div class="stats-grid reveal reveal-d1">
         <div class="stat"><div class="stat-num" data-count="5">0</div><div class="stat-lbl">Years Experience</div></div>
-        <div class="stat"><div class="stat-num" data-count="10">0</div><div class="stat-lbl">Blockchain Networks</div></div>
-        <div class="stat"><div class="stat-num" data-count="70">0</div><div class="stat-lbl">% Cost Reduced</div></div>
-        <div class="stat"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Cloud Providers</div></div>
+        <div class="stat"><div class="stat-num" data-count="20">0</div><div class="stat-lbl">M tx/day Processed</div></div>
+        <div class="stat"><div class="stat-num" data-count="70">0</div><div class="stat-lbl">% Infra Cost Saved</div></div>
+        <div class="stat"><div class="stat-num" data-count="15">0</div><div class="stat-lbl">Production Nodes</div></div>
       </div>
     </div>
   </div>
@@ -538,40 +539,114 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
     </div>
     <div class="projects-grid">
 
+      <!-- Project 1: Terraflow -->
       <div class="proj reveal">
         <div class="proj-inner">
           <div class="proj-info">
-            <div class="proj-tag">Distributed Systems / Blockchain</div>
-            <h3 class="proj-name">Multi-Chain Data Ingestion Platform</h3>
-            <p class="proj-desc">Architected a high-throughput platform delivering near real-time on-chain data across 10+ blockchain networks. Built pipelines for block parsing, event extraction, and data normalization serving downstream analytics.</p>
+            <div class="proj-tag">Data Platform / Built from Scratch</div>
+            <h3 class="proj-name">Terraflow — Real-Time Data Ingestion Platform</h3>
+            <p class="proj-desc">Designed and built from scratch a real-time Python data ingestion platform processing 15–20 million transactions per day. Pluggable adapter pattern for 10+ data sources, automated validation pipelines, and RESTful/gRPC APIs.</p>
             <div class="proj-stack">
-              <span class="tag">Go</span><span class="tag">Python</span><span class="tag">gRPC</span>
+              <span class="tag">Python</span><span class="tag">Go</span><span class="tag">gRPC</span>
               <span class="tag">Kubernetes</span><span class="tag">TiDB</span><span class="tag">Redis</span><span class="tag">Kafka</span>
             </div>
             <div class="proj-metrics">
-              <div class="proj-metric"><div class="proj-metric-val">15+</div><div class="proj-metric-lbl">Deployments</div></div>
+              <div class="proj-metric"><div class="proj-metric-val">20M</div><div class="proj-metric-lbl">tx/day</div></div>
+              <div class="proj-metric"><div class="proj-metric-val">10+</div><div class="proj-metric-lbl">Data Sources</div></div>
               <div class="proj-metric"><div class="proj-metric-val">NRT</div><div class="proj-metric-lbl">Latency</div></div>
-              <div class="proj-metric"><div class="proj-metric-val">70-80%</div><div class="proj-metric-lbl">Cost Saved</div></div>
             </div>
           </div>
           <div class="proj-vis">
             <svg class="arch-svg" viewBox="0 0 400 300">
-              <line x1="80" y1="40" x2="200" y2="120" class="flow"/>
-              <line x1="320" y1="40" x2="200" y2="120" class="flow"/>
-              <line x1="200" y1="120" x2="200" y2="190" class="flow"/>
-              <line x1="200" y1="190" x2="100" y2="260" class="flow"/>
-              <line x1="200" y1="190" x2="300" y2="260" class="flow"/>
+              <line x1="60" y1="40" x2="200" y2="110" class="flow"/>
+              <line x1="200" y1="40" x2="200" y2="110" class="flow"/>
+              <line x1="340" y1="40" x2="200" y2="110" class="flow"/>
+              <line x1="200" y1="110" x2="200" y2="180" class="flow"/>
+              <line x1="200" y1="180" x2="100" y2="260" class="flow"/>
+              <line x1="200" y1="180" x2="300" y2="260" class="flow"/>
             </svg>
-            <div class="arch-node hl" style="top:15px; left:20px;">BTC / ETH</div>
-            <div class="arch-node hl" style="top:15px; right:20px;">TRON / BSC</div>
-            <div class="arch-node hl-p" style="top:95px; left:50%; transform:translateX(-50%);">Ingestion Engine (Go)</div>
-            <div class="arch-node" style="top:165px; left:50%; transform:translateX(-50%);">gRPC / Event Bus</div>
-            <div class="arch-node" style="bottom:15px; left:15px;">TiDB Cluster</div>
-            <div class="arch-node" style="bottom:15px; right:15px;">Analytics API</div>
+            <div class="arch-node hl" style="top:15px; left:10px;">Source A</div>
+            <div class="arch-node hl" style="top:15px; left:50%; transform:translateX(-50%);">Source B</div>
+            <div class="arch-node hl" style="top:15px; right:10px;">Source N</div>
+            <div class="arch-node hl-p" style="top:85px; left:50%; transform:translateX(-50%);">Terraflow Engine</div>
+            <div class="arch-node" style="top:155px; left:50%; transform:translateX(-50%);">gRPC / REST APIs</div>
+            <div class="arch-node" style="bottom:15px; left:12px;">TiDB / Redis</div>
+            <div class="arch-node" style="bottom:15px; right:12px;">Analytics</div>
           </div>
         </div>
       </div>
 
+      <!-- Project 2: SkyNode -->
+      <div class="proj reveal">
+        <div class="proj-inner">
+          <div class="proj-vis" style="order:-1;">
+            <svg class="arch-svg" viewBox="0 0 400 300">
+              <line x1="200" y1="30" x2="80" y2="120" class="flow"/>
+              <line x1="200" y1="30" x2="200" y2="120" class="flow"/>
+              <line x1="200" y1="30" x2="320" y2="120" class="flow"/>
+              <line x1="80" y1="120" x2="200" y2="200" class="flow"/>
+              <line x1="200" y1="120" x2="200" y2="200" class="flow"/>
+              <line x1="320" y1="120" x2="200" y2="200" class="flow"/>
+              <line x1="200" y1="200" x2="200" y2="270" class="flow"/>
+            </svg>
+            <div class="arch-node hl-p" style="top:8px; left:50%; transform:translateX(-50%);">React Dashboard</div>
+            <div class="arch-node" style="top:96px; left:8px;">K8s Cluster</div>
+            <div class="arch-node" style="top:96px; left:50%; transform:translateX(-50%);">Go API</div>
+            <div class="arch-node" style="top:96px; right:8px;">Monitoring</div>
+            <div class="arch-node hl" style="top:178px; left:50%; transform:translateX(-50%);">15+ Validator Nodes</div>
+            <div class="arch-node" style="bottom:8px; left:50%; transform:translateX(-50%);">$700M+ Secured</div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-tag">Fullstack Infrastructure / <a href="https://skynode.certik.com" target="_blank" style="color:var(--cyan)">Live Site ↗</a></div>
+            <h3 class="proj-name">SkyNode — Validator Infrastructure Platform</h3>
+            <p class="proj-desc">Built the entire SkyNode infrastructure from the ground up — production K8s clusters, Docker containerisation, Prometheus/Grafana monitoring, and automated deployment pipelines. Developed the fullstack Staking Hub (<a href="https://skynode.certik.com" target="_blank">skynode.certik.com</a>) with React frontend and Go backend. Scaled from a handful to 15+ production deployments.</p>
+            <div class="proj-stack">
+              <span class="tag">React</span><span class="tag">Go</span><span class="tag">Kubernetes</span><span class="tag">Docker</span>
+              <span class="tag">Terraform</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
+            </div>
+            <div class="proj-metrics">
+              <div class="proj-metric"><div class="proj-metric-val">$700M+</div><div class="proj-metric-lbl">Assets Secured</div></div>
+              <div class="proj-metric"><div class="proj-metric-val">15+</div><div class="proj-metric-lbl">Prod Nodes</div></div>
+              <div class="proj-metric"><div class="proj-metric-val">70-80%</div><div class="proj-metric-lbl">Cost Saved</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: nsa-auditor -->
+      <div class="proj reveal">
+        <div class="proj-inner">
+          <div class="proj-info">
+            <div class="proj-tag">AI Engineering / Agent Pipeline</div>
+            <h3 class="proj-name">Neuro-Symbolic AI Security Auditor</h3>
+            <p class="proj-desc">Built an AI agent pipeline where LLMs propose vulnerabilities and a symbolic verifier (Halmos/Z3) mathematically proves them. 4-stage orchestration: planner → spec author → verifier → adjudicator. Includes RAG comparison leg with Qdrant vector DB and evaluation harness with recall/precision metrics.</p>
+            <div class="proj-stack">
+              <span class="tag">Python</span><span class="tag">Claude API</span><span class="tag">Halmos/Z3</span>
+              <span class="tag">Pydantic</span><span class="tag">Qdrant</span><span class="tag">FastAPI</span>
+            </div>
+            <div class="proj-metrics">
+              <div class="proj-metric"><div class="proj-metric-val">4-Stage</div><div class="proj-metric-lbl">Agent Pipeline</div></div>
+              <div class="proj-metric"><div class="proj-metric-val">0.83</div><div class="proj-metric-lbl">Recall</div></div>
+              <div class="proj-metric"><div class="proj-metric-val">Proof</div><div class="proj-metric-lbl">Grade Trust</div></div>
+            </div>
+          </div>
+          <div class="proj-vis">
+            <svg class="arch-svg" viewBox="0 0 400 300">
+              <line x1="200" y1="25" x2="200" y2="90" class="flow"/>
+              <line x1="200" y1="90" x2="200" y2="160" class="flow"/>
+              <line x1="200" y1="160" x2="200" y2="230" class="flow"/>
+              <line x1="200" y1="230" x2="200" y2="280" class="flow"/>
+            </svg>
+            <div class="arch-node hl" style="top:8px; left:50%; transform:translateX(-50%);">LLM Planner</div>
+            <div class="arch-node" style="top:75px; left:50%; transform:translateX(-50%);">Spec Author (LLM)</div>
+            <div class="arch-node hl-p" style="top:142px; left:50%; transform:translateX(-50%);">Symbolic Verifier (Z3)</div>
+            <div class="arch-node" style="top:212px; left:50%; transform:translateX(-50%);">Adjudicator (LLM)</div>
+            <div class="arch-node hl-pk" style="bottom:2px; left:50%; transform:translateX(-50%);">Proven Vulnerability</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: B2B E-Commerce -->
       <div class="proj reveal">
         <div class="proj-inner">
           <div class="proj-vis" style="order:-1;">
@@ -593,7 +668,7 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
           <div class="proj-info">
             <div class="proj-tag">Microservices / Cloud Migration</div>
             <h3 class="proj-name">Enterprise B2B E-Commerce Platform</h3>
-            <p class="proj-desc">Initially built backend services in Java (Spring Boot), then led the full technical migration from Java to Golang. Designed scalable microservices for a high-concurrency B2B platform while engineering distributed catalog ingestion handling 2–30GB files.</p>
+            <p class="proj-desc">Led the full technical migration from Java (Spring Boot) to Golang for a high-concurrency B2B platform. Designed scalable microservices, engineered distributed catalog ingestion for 2–30GB files, and migrated cloud infrastructure from AWS to Azure.</p>
             <div class="proj-stack">
               <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Golang</span><span class="tag">Gin</span><span class="tag">gRPC</span>
               <span class="tag">Kafka</span><span class="tag">Azure</span><span class="tag">PostgreSQL</span>
@@ -603,39 +678,6 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
               <div class="proj-metric"><div class="proj-metric-val">30GB</div><div class="proj-metric-lbl">File Scale</div></div>
               <div class="proj-metric"><div class="proj-metric-val">AWS→Azure</div><div class="proj-metric-lbl">Cloud</div></div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj reveal">
-        <div class="proj-inner">
-          <div class="proj-info">
-            <div class="proj-tag">AI Engineering / DevTools</div>
-            <h3 class="proj-name">AI-Augmented Development Pipeline</h3>
-            <p class="proj-desc">Pioneered AI workflows integrating Claude Code, OpenAI Codex, and GitHub Copilot. Built multi-agent orchestration, MCP integrations, and internal tools that autonomously deliver features and run tests.</p>
-            <div class="proj-stack">
-              <span class="tag">Claude Code</span><span class="tag">Agent SDK</span><span class="tag">MCP</span>
-              <span class="tag">React</span><span class="tag">Python</span><span class="tag">TypeScript</span>
-            </div>
-            <div class="proj-metrics">
-              <div class="proj-metric"><div class="proj-metric-val">Full-Stack</div><div class="proj-metric-lbl">AI Output</div></div>
-              <div class="proj-metric"><div class="proj-metric-val">Multi-Agent</div><div class="proj-metric-lbl">Orchestration</div></div>
-            </div>
-          </div>
-          <div class="proj-vis">
-            <svg class="arch-svg" viewBox="0 0 400 300">
-              <line x1="200" y1="30" x2="80" y2="130" class="flow"/>
-              <line x1="200" y1="30" x2="200" y2="130" class="flow"/>
-              <line x1="200" y1="30" x2="320" y2="130" class="flow"/>
-              <line x1="80" y1="130" x2="200" y2="240" class="flow"/>
-              <line x1="200" y1="130" x2="200" y2="240" class="flow"/>
-              <line x1="320" y1="130" x2="200" y2="240" class="flow"/>
-            </svg>
-            <div class="arch-node hl" style="top:10px; left:50%; transform:translateX(-50%);">Developer Prompt</div>
-            <div class="arch-node" style="top:108px; left:10px;">Claude Code</div>
-            <div class="arch-node hl-p" style="top:108px; left:50%; transform:translateX(-50%);">MCP Server</div>
-            <div class="arch-node" style="top:108px; right:10px;">GitHub Copilot</div>
-            <div class="arch-node hl-pk" style="bottom:25px; left:50%; transform:translateX(-50%);">Autonomous Output</div>
           </div>
         </div>
       </div>
@@ -664,7 +706,7 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
           <div class="skill-group-title">Infrastructure</div>
           <div class="skill-item"><div class="skill-head"><span class="skill-name">Kubernetes / Docker</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill cyan" data-w="90"></div></div></div>
           <div class="skill-item"><div class="skill-head"><span class="skill-name">AWS / Azure / Hetzner</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill cyan" data-w="85"></div></div></div>
-          <div class="skill-item"><div class="skill-head"><span class="skill-name">Terraform / CI-CD</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill cyan" data-w="80"></div></div></div>
+          <div class="skill-item"><div class="skill-head"><span class="skill-name">Terraform / CI-CD / Monitoring</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill cyan" data-w="85"></div></div></div>
         </div>
       </div>
       <div class="reveal reveal-d2">
@@ -678,10 +720,10 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
         <div class="skill-group">
           <div class="skill-group-title">Tools & More</div>
           <div class="chips">
-            <span class="chip">gRPC</span><span class="chip">REST APIs</span><span class="chip">Claude Code</span>
-            <span class="chip">MCP</span><span class="chip">Agent SDK</span><span class="chip">GitHub Copilot</span>
-            <span class="chip">Solidity</span><span class="chip">EVM Chains</span><span class="chip">GitHub Actions</span>
-            <span class="chip">Spring Boot</span><span class="chip">Maven</span><span class="chip">Microservices</span><span class="chip">Event-Driven</span><span class="chip">CloverDX</span>
+            <span class="chip">React</span><span class="chip">gRPC</span><span class="chip">REST APIs</span>
+            <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">GitHub Actions</span>
+            <span class="chip">CI/CD</span><span class="chip">Spring Boot</span><span class="chip">Maven</span>
+            <span class="chip">Claude API</span><span class="chip">LLM Pipelines</span><span class="chip">Microservices</span><span class="chip">Event-Driven</span>
           </div>
         </div>
       </div>
@@ -700,25 +742,26 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
       <div class="tl-item reveal">
         <div class="tl-date">Feb 2024 &mdash; Present</div>
         <div class="tl-company">CertiK</div>
-        <div class="tl-role">Software Engineer III &bull; Python, Go &bull; Remote</div>
+        <div class="tl-role">Software Engineer III &bull; Python, Go, React &bull; Remote</div>
         <ul class="tl-list">
-          <li>Architected multi-chain data ingestion platform across 10+ blockchain networks with near real-time processing</li>
-          <li>Built high-throughput pipelines for block parsing, event extraction, and normalization using Go and Python</li>
-          <li>Led the SkyNode initiative — scaling distributed service clusters from a handful to 15+ production deployments, driving significant revenue growth</li>
-          <li>Migrated infrastructure from AWS to cost-efficient providers (Hetzner, OVH, Latitude), reducing operational costs by 70–80%</li>
-          <li>Pioneered AI-augmented workflows using Claude Code and multi-agent orchestration</li>
+          <li>Designed and built Terraflow from scratch — real-time data ingestion platform processing 15–20M tx/day with pluggable adapter pattern for 10+ data sources</li>
+          <li>Built the entire SkyNode infrastructure from the ground up — K8s clusters, Docker, Prometheus/Grafana monitoring, automated deployment pipelines</li>
+          <li>Developed the CertiK Staking Hub (<a href="https://skynode.certik.com" target="_blank">skynode.certik.com</a>) fullstack: React frontend + Go backend, securing $700M+ in staked assets</li>
+          <li>Scaled SkyNode from a handful to 15+ production deployments across multiple networks</li>
+          <li>Leading Python-to-Go migration using Harness Engineering, targeting ~$50K/year infrastructure savings</li>
+          <li>Migrated infrastructure from AWS to cost-efficient providers, reducing operational costs by 70–80%</li>
         </ul>
       </div>
       <div class="tl-item reveal">
         <div class="tl-date">Feb 2021 &mdash; Jan 2024</div>
-        <div class="tl-company">Varis <span style="color:var(--text-3);font-weight:400;font-size:0.85em">(formerly Office Depot)</span></div>
+        <div class="tl-company">Varis <span style="color:var(--text-3);font-weight:400;font-size:0.85em">(ODP Corporation)</span></div>
         <div class="tl-role">Software Developer II &bull; Java, Golang &bull; USA</div>
         <ul class="tl-list">
-          <li>Initially developed backend services in Java (Spring Boot, Maven) for the B2B e-commerce platform; led the technical migration from Java to Golang</li>
-          <li>Designed scalable backend microservices for high-concurrency B2B e-commerce using Golang, Gin, and gRPC</li>
-          <li>Engineered distributed catalog ingestion handling 2–30GB files with streaming and parallel processing</li>
-          <li>Led migration of cloud infrastructure from AWS and Java to Azure and Golang, significantly reducing operating costs</li>
-          <li>Optimized event-driven architecture using Kafka and Azure Data Factory</li>
+          <li>Drove technical migration from Java (Spring Boot) to Golang, redesigning core microservices for a high-concurrency B2B e-commerce platform</li>
+          <li>Designed scalable backend APIs and business logic layers with PostgreSQL and Azure SQL, handling concurrent requests from multiple client applications</li>
+          <li>Engineered distributed catalog ingestion for 2–30GB files using streaming, Kafka event-driven architecture, and Azure Data Factory for ETL</li>
+          <li>Led cloud migration from AWS to Azure (Data Factory, Blob Storage, Azure SQL), reducing infrastructure costs</li>
+          <li>Built CI/CD pipelines, operational dashboards, and mentored junior engineers on Go adoption</li>
         </ul>
       </div>
     </div>
@@ -729,17 +772,17 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
 <section id="certifications">
   <div class="container">
     <div class="reveal">
-      <div class="section-label">Learning</div>
-      <h2 class="section-title">AI <span class="gradient-text">Certifications</span></h2>
+      <div class="section-label">AI & Agentic</div>
+      <h2 class="section-title">AI <span class="gradient-text">Projects</span></h2>
     </div>
     <div class="cert-grid">
       <div class="cert reveal">
-        <div class="cert-name">Anthropic Academy — Full Course Completion</div>
-        <div class="cert-desc">Claude API, Claude 101, Claude Code in Action, Agent Skills, MCP, Subagents (2026)</div>
+        <div class="cert-name">nsa-auditor — Neuro-Symbolic Security Auditor</div>
+        <div class="cert-desc">LLM agent pipeline + symbolic verifier (Halmos/Z3). 4-stage orchestration, RAG comparison leg with Qdrant, evaluation harness with recall/precision metrics. ~1,700 lines Python, 45 tests.</div>
       </div>
       <div class="cert reveal reveal-d1">
-        <div class="cert-name">Agentic Coding Side Project</div>
-        <div class="cert-desc">Full-stack agentic workflows with Claude Code, multi-agent systems, MCP integrations (2026)</div>
+        <div class="cert-name">Harness Engineering Practice</div>
+        <div class="cert-desc">Agent-ready repository for Python→Go migration with record/replay parity harness, mechanically-enforced architecture rules, cross-session memory, and entropy-reduction workflows.</div>
       </div>
     </div>
   </div>
@@ -774,7 +817,7 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
       <div class="section-label">Connect</div>
       <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
       <p style="color:var(--text-2); max-width:480px; margin:0 auto 1rem; font-size:1.05rem; line-height:1.8;">
-        Actively seeking backend & distributed systems roles in <strong style="color:var(--cyan)">Sydney</strong> and across Australia. Ready to relocate.
+        Actively seeking backend & distributed systems roles in <strong style="color:var(--cyan)">Canberra</strong> and <strong style="color:var(--cyan)">Sydney</strong>.
       </p>
     </div>
     <div class="contact-cards reveal reveal-d1">
@@ -788,7 +831,7 @@ footer { padding: 2.5rem; text-align: center; font-size: 0.75rem; color: var(--t
       </a>
       <div class="contact-card">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div><div class="lbl">Location</div><div class="val">Canberra — Open to Sydney</div></div>
+        <div><div class="lbl">Location</div><div class="val">Canberra & Sydney, AU</div></div>
       </div>
     </div>
   </div>
@@ -842,9 +885,9 @@ window.addEventListener('scroll', () => {
 (function() {
   const cmds = [
     { c: 'whoami', o: '<span class="hl-cyan">Backend & Distributed Systems Engineer</span>' },
-    { c: 'cat tech.stack', o: '<span class="hl-purple">Go</span> | <span class="hl-purple">Python</span> | <span class="hl-purple">Java</span> | K8s | gRPC | Kafka | TiDB' },
+    { c: 'cat tech.stack', o: '<span class="hl-purple">Go</span> | <span class="hl-purple">Python</span> | <span class="hl-purple">Java</span> | React | K8s | gRPC | Kafka' },
     { c: 'kubectl get nodes', o: '<span class="hl-green">AWS ✓</span>  <span class="hl-green">Azure ✓</span>  <span class="hl-green">Alicloud ✓</span>  <span class="hl-green">Hetzner ✓</span>  <span class="hl-green">OVH ✓</span>  <span class="hl-green">Latitude ✓</span>' },
-    { c: 'echo $STATUS', o: '<span class="hl-cyan">Canberra, AU</span>  |  Open to opportunities in Sydney' },
+    { c: 'echo $STATUS', o: '<span class="hl-cyan">Based in Canberra & Sydney</span>  |  20M tx/day' },
   ];
   const cmdEl = document.getElementById('typed-cmd');
   const outEl = document.getElementById('term-out');
@@ -898,7 +941,7 @@ document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 const co = new IntersectionObserver(es => es.forEach(e => {
   if (!e.isIntersecting) return;
   const el = e.target, t = +el.dataset.count;
-  const sfx = t===70?'%+':'+';
+  const sfx = t===70?'%+':t===20?'M+':'+';
   let cur=0; const step=Math.max(1,Math.floor(t/30));
   const iv = setInterval(()=>{cur+=step;if(cur>=t){cur=t;clearInterval(iv);}el.textContent=cur+sfx;},35);
   co.unobserve(el);
